@@ -6,7 +6,8 @@ int main(){
   int height = 512;
   FILE *f = fopen("output.ppm", "w");
 
-
+  printf("Generating image \"output.ppm\"\n");
+  
   fprintf(f, "P3\n%d %d\n255\n", width, height);
   for (int y = 0; y < height; y++){
     for (int x = 0; x < width; x++){
